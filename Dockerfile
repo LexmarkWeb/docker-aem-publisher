@@ -16,5 +16,10 @@ ONBUILD ADD https://raw.githubusercontent.com/ggotti/aem_author/master/org.apach
 # Installs AEM
 ONBUILD RUN ["python","aemInstaller.py","-i","cq-publish-4503.jar","-r","publish","-p","4503"]
 
+ONBUILD WORKDIR /aem/crx-quickstart/bin
+#Replaces the port within the quickstart file with the standard publisher port
+ONBUILD RUN cp quickstart quickstart.original
+ONBUILD RUN cat quickstart.original | sed "s|4502|4503|g" > quickstart
+
 EXPOSE 4503 8000
 ENTRYPOINT ["/aem/crx-quickstart/bin/quickstart"]

@@ -3,7 +3,7 @@
 This Docker image installs Adobe Experience Manager 5.x, and allows it
 to be run within a Docker container.
 
-It's a pretty blantant rip of [ggotti/aem-author](https://github.com/ggotti/aem-author) with minor tweaks to play nice with CQ/AEM 5.x.
+It's a pretty blantant rip of [ggotti/aem-publisher](https://github.com/ggotti/aem-publisher) with minor tweaks to play nice with CQ/AEM 5.x.
 
 ## About docker-aem-publisher
 
