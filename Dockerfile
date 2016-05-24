@@ -16,7 +16,7 @@ ONBUILD WORKDIR /aem
 ONBUILD RUN java -XX:MaxPermSize=256m -Xmx1024M -jar cq-publish-4503.jar -unpack -r publish -p 4503
 
 # Installs AEM
-ONBUILD RUN ["/aem/aemInstaller.sh","-i","cq-publish-4502.jar","-r","publish","-p","4503"]
+ONBUILD RUN ["/aem/aemInstaller.sh","-i","cq-publish-4503.jar","-r","publish","-p","4503"]
 
 ONBUILD WORKDIR /aem/crx-quickstart/bin
 #Replaces the port within the quickstart file with the standard publisher port
