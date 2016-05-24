@@ -1,6 +1,6 @@
 #!/bin/bash
 
-baseUrl="http://localhost:4502"
+baseUrl="http://localhost:4503"
 password="admin:admin"
 
 echo "uploading optional packages"
